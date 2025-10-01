@@ -1,0 +1,83 @@
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: Arial, sans-serif;
+   background-color: #f4f4f4;
+   color: #333;
+   line-height: 1.6;
+   height: 300vh; /* Para permitir el desplazamiento y ver el efecto de fixed */
+
+   h1, h2 {
+      text-align: center;
+      padding: 10px;
+      background-color: lightcyan;
+      font-size: 2rem;
+   }
+
+   h2 {
+      font-size: 1.5rem;
+   }
+
+   .container {
+      position: relative; /* Definir la posición del elemento */
+      background-color: darkviolet;
+      height: 50vh;
+      color: white;
+
+      .relative-box {
+         position: relative; /* Posición relativa al contenedor */
+         background-color: darkorange;
+         /* height: 30vh; */
+         width: 300px;
+         top: 20px; /* Desplazamiento desde su posición original */
+         left: 20px; /* Desplazamiento desde su posición original */
+      }
+
+      .absolute-box {
+         position: absolute; /* Posición absoluta respecto al contenedor */
+         background-color: darkcyan;
+         width: 300px;
+         top: 20px; /* Desplazamiento desde la esquina superior izquierda del contenedor */
+         right: 20px; /* Desplazamiento desde la esquina superior izquierda del contenedor */
+         z-index: 10;
+      }
+   }
+
+   .fixed-box {
+      position: fixed; /* Posición fija respecto a la ventana del navegador */
+      background-color: yellow;
+      border: solid red;
+      padding: 10px;
+      bottom: 20px; /* Desplazamiento desde la esquina superior izquierda de la ventana */
+      right: 20px; /* Desplazamiento desde la esquina superior izquierda de la ventana */
+   }
+
+   .sticky-box {
+      position: sticky; /* Posición sticky respecto a su contenedor */
+      background-color: lightgreen;
+      border: solid green;
+      padding: 10px;
+      top: 0; /* Se "pega" a la parte superior del contenedor cuando se desplaza */
+      width: 200px;
+      left: 20px;
+      left: calc(100% - 220px); /* Para que se mantenga a la derecha con un margen de 20px */
+      z-index: 100; /* Asegura que esté por encima de otros elementos al hacer scroll */
+   }
+
+   .flex-container {
+      display: flex;
+      height: 800px;
+
+      .item {
+         width: 100px;
+         height: 100px;
+         border: 1px solid black;
+         background-color: lightpink;
+      }
+   }
+}  

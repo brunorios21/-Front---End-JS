@@ -1,0 +1,115 @@
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--fondoPrimario: #FCF7F8;
+	--colorOscuro: #1A1E21;
+	--azul: #3860EC;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	min-height: 100vh;
+}
+
+ul {
+	margin: 0;
+}
+
+.contenedor {
+	max-width: 500px;
+	padding: 30px;
+	margin: 0 auto;
+}
+
+.titulo {
+	font-size: 20px;
+	text-align: center;
+	text-transform: uppercase;
+	color: var(--colorOscuro);
+	margin-bottom: 20px;
+}
+
+.grupo {
+	padding: 60px 0;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.grupo div p,
+.grupo div div,
+.grupo div span,
+.grupo ul li {
+	background: #dbdbdb;
+	padding: 10px;
+}
+
+.enlace:link {
+	color: white;
+}
+
+.enlace {
+	text-decoration: none;
+	background-color: #3860EC;
+	color: white;
+	border: 1px solid white;
+	border-radius: 20px;
+	padding: 0.5rem 1rem;
+	margin: 0 1rem;
+}
+
+.enlace:hover {
+	background-color: white;
+	color: #3860EC;
+	border: 1px solid #3860EC;
+}
+
+.enlace:visited {
+	color: #1A1E21;
+}
+
+.enlace:active {
+	background-color: orangered;
+}
+.parrafos {
+	:first-child {
+		background-color: #3860EC;
+	}
+
+	:last-child {
+		background-color: #3860EC;
+	}
+}
+
+.elementos {
+	p:first-of-type {
+		background-color: #3860EC;
+	}
+
+	p:last-of-type {
+		background-color: #3860EC;
+	}
+}
+
+.lista {
+	:nth-child(odd) {
+		background-color: #3860EC;
+	}
+}
+
+.lista3 {
+	:only-child {
+		background-color: #3860EC;
+	}
+}
+
+.lista4 {
+	p:only-of-type {
+		background-color: #3860EC;
+	}
+}
