@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>DOM y Eventos</title>
+</head>
+<body>
+   
+   <h1 name="name-h1" class="clase-h1" id="ident">DOM y Eventos</h1>
+   <a href="#">Enlace</a>
+   <p id="parrafo">Saludo!</p>
+   <p class="clase p1" name="name">Otro saludo!</p>
+   <p class="clase" name="name">Nuevo saludo</p>
+
+   <form id="formulario">
+      <label for="name">Nombre</label>
+      <input type="text" id="name" name="name" >
+      <br>
+      <label for="lastname">Apellido</label>
+      <input type="text" id="lastname" name="lastname">
+   </form>
+   <button onclick="mostrarContenido()">Mostrar</button>
+   <div id="valor"></div>
+   <button onclick="agregarContenido()">Añadir</button>
+
+   <script src="./js/main.js"></script>
+</body>
+</html>
