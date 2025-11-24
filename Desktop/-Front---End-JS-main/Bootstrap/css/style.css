@@ -1,0 +1,8 @@
+.height-imagen {
+   height: 300px;
+   object-fit: cover;
+}
+
+.bg-body-tertiary {
+   background-color: rgb(78, 125, 166) !important;
+}
